@@ -373,6 +373,7 @@ Clang-Tidy Checks
    :doc:`readability-string-compare <readability/string-compare>`, "Yes"
    :doc:`readability-suspicious-call-argument <readability/suspicious-call-argument>`,
    :doc:`readability-uniqueptr-delete-release <readability/uniqueptr-delete-release>`, "Yes"
+   :doc:`readability-unnecessary-inline-specifier <readability/unnecessary-inline-specifier>`, "Yes"
    :doc:`readability-uppercase-literal-suffix <readability/uppercase-literal-suffix>`, "Yes"
    :doc:`readability-use-anyofallof <readability/use-anyofallof>`,
    :doc:`zircon-temporary-objects <zircon/temporary-objects>`,

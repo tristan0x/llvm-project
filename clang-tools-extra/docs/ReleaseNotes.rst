@@ -180,6 +180,11 @@ New checks
   Detects C++ code where a reference variable is used to extend the lifetime
   of a temporary object that has just been constructed.
 
+- New :doc:`readability-unnecessary-inline-specifier
+  <clang-tidy/checks/readability/unnecessary-inline-specifier>` check.
+
+  FIXME: add release notes.
+
 New check aliases
 ^^^^^^^^^^^^^^^^^
 

@@ -52,6 +52,7 @@
 #include "StringCompareCheck.h"
 #include "SuspiciousCallArgumentCheck.h"
 #include "UniqueptrDeleteReleaseCheck.h"
+#include "UnnecessaryInlineSpecifierCheck.h"
 #include "UppercaseLiteralSuffixCheck.h"
 #include "UseAnyOfAllOfCheck.h"
 
@@ -147,6 +148,8 @@ public:
         "readability-suspicious-call-argument");
     CheckFactories.registerCheck<UniqueptrDeleteReleaseCheck>(
         "readability-uniqueptr-delete-release");
+    CheckFactories.registerCheck<UnnecessaryInlineSpecifierCheck>(
+        "readability-unnecessary-inline-specifier");
     CheckFactories.registerCheck<UppercaseLiteralSuffixCheck>(
         "readability-uppercase-literal-suffix");
     CheckFactories.registerCheck<UseAnyOfAllOfCheck>(
