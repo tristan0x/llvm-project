@@ -62,7 +62,6 @@ void SuspiciousSemicolonCheck::check(const MatchFinder::MatchResult &Result) {
   unsigned BaseIndent = SM.getSpellingColumnNumber(Statement->getBeginLoc());
   unsigned NewTokenIndent = SM.getSpellingColumnNumber(Token.getLocation());
   unsigned NewTokenLine = SM.getSpellingLineNumber(Token.getLocation());
-
   if (!IsIfStmt && NewTokenIndent <= BaseIndent &&
       Token.getKind() != tok::l_brace && NewTokenLine != SemicolonLine)
     return;

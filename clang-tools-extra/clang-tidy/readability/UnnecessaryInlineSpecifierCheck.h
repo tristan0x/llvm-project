@@ -19,10 +19,11 @@ namespace clang::tidy::readability {
 /// http://clang.llvm.org/extra/clang-tidy/checks/readability/unnecessary-inline-specifier.html
 class UnnecessaryInlineSpecifierCheck : public ClangTidyCheck {
 public:
-  UnnecessaryInlineSpecifierCheck(StringRef Name, ClangTidyContext *Context)
-      : ClangTidyCheck(Name, Context) {}
+  UnnecessaryInlineSpecifierCheck(StringRef Name, ClangTidyContext *Context);
   void registerMatchers(ast_matchers::MatchFinder *Finder) override;
   void check(const ast_matchers::MatchFinder::MatchResult &Result) override;
+private:
+  FileExtensionsSet HeaderFileExtensions;
 };
 
 } // namespace clang::tidy::readability
